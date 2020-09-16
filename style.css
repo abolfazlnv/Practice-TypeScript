@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background-color: aliceblue;
+    background-image: url(./kevin-laminto-KDjhMmR7Rvw-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box-timer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #7987cb52;
+    border-radius: 6px;
+    height: 54px;
+    position: fixed;
+    padding: 6px 12px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.box-timer .numbers {
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 24px;
+    position: relative;
+}
+.days {
+    margin-left: 8px;
+}
+.seconds {
+    margin-right: 8px;
+}
+.days::before {
+    content: "Days";
+    position: absolute;
+    top: 30px;
+    left: -3px;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: lighter;
+    opacity: .7;
+}
+.hours::before {
+    content: "Hours";
+    position: absolute;
+    top: 30px;
+    left: -6px;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: lighter;
+    opacity: .7;
+}
+.minutes::before {
+    content: "Minutes";
+    position: absolute;
+    top: 30px;
+    left: -12px;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: lighter;
+    opacity: .7;
+}
+.seconds::before {
+    content: "Seconds";
+    position: absolute;
+    top: 30px;
+    left: -14px;
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: lighter;
+    opacity: .7;
+}
+.box-timer .symbol {
+    color: #ffffff;
+    font-weight: bolder;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 24px;
+}
+.some-text {
+    position: relative;
+    margin-top: 75px;
+    font-size: 24px;
+    font-weight: lighter;
+    margin-left: 20px;
+    color: white;
+}
+.some-text span {
+    display: inline-block;
+    font-size: 11px;
+}
