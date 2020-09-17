@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #263238;
+}
+header {
+    background-color: #ECEFF1;
+    padding: 8px 8px 12px;
+    text-align: center;
+    color: rgb(61, 61, 61);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main {
+    text-align: center;
+}
+.scubar {
+    display: inline-block;
+    height: 60px;
+    width: 120px;
+    border: 2px solid #ebebeb;
+    margin-top: 40px;
+    position: relative;
+    border-radius: 1px;
+}
+.scubar .user {
+    position: absolute;
+    left: -25px;
+    top: 12px;
+    background-color: tomato;
+    padding: 3px 8px 6px;
+    color: white;
+    border-radius: 1px;
+}
+.scubar .computer {
+    position: absolute;
+    right: -60px;
+    top: 12px;
+    background-color: tomato;
+    padding: 3px 8px 6px;
+    color: white;
+    border-radius: 1px;
+}
+.scubar .symbol {
+    position: relative;
+    font-size: 24px;
+    font-weight: bolder;
+    color: white;
+    top: 10px;
+}
+.scubar .countUser {
+    position: relative;
+    font-size: 24px;
+    font-weight: bolder;
+    color: white;
+    top: 10px;
+}
+.scubar .countComputer {
+    position: relative;
+    font-size: 24px;
+    font-weight: bolder;
+    color: white;
+    top: 10px;
+}
+.messges {
+    position: relative;
+    font-size: 24px;
+    font-weight: bolder;
+    color: white;
+    top: 20px;
+}
+.images {
+    position: relative;
+    top: 40px;
+}
+.images img {
+    height: 80px;
+    border-radius: 45px;
+    border: 1px solid white;
+    margin: 20px;
+}
+.some-text {
+    margin-top: 30px;
+    font-size: 11px;
+    color: white;
+}
+.images img:hover {
+    cursor: pointer;
+}
+
+/* styles for select items */
+.eql-selected {
+    background-color: #1565C0;
+}
+.win-selected {
+    background-color: #64DD17;
+}
+.los-selected {
+    background-color: #ff1744;
+}
+.def-selected {
+    transition: 1s ease-in-out;
+    background-color: none;
+}
