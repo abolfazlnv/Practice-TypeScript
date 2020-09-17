@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: rgb(223, 223, 223);
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    background-color: white;
+    width: 220px;
+    align-self: center;
+    box-shadow: 0 2px 12px 1px #cacaca;
+    border-radius: 3px;
+}
+header {
+    background-color: #81D4FA;
+    color: white;
+    border-radius: 3px 3px 0 0;
+    position: relative;
+    height: 150px;
+}
+header img {
+    height: 200px;
+    position: absolute;
+    top: -13px;
+}
+.title {
+    padding: 5px 10px;
+    background-color: #4FC3F7;
+    border-radius: 3px 3px 0 0;
+}
+main {
+    overflow: hidden;
+}
+main ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    max-height: 200px;
+    overflow-y: scroll;
+    --scrollbarBG: #f1f1f1;
+    --thumbBG: #cecece;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+    margin-right: 8px;
+}
+/* scrollbar */
+main ul::-webkit-scrollbar {
+    width: 11px;
+}
+main ul::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+    border-radius: 3px;
+}
+main ul::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+main ul li {
+    padding: 10px 10px 10px 0px;
+    border-bottom: 1px solid #ECEFF1;
+    color: #444444;
+    font-size: 13px;
+    margin-right: 10px;
+    margin-left: 20px;
+    position: relative;
+}
+footer {
+    text-align: center;
+    position: relative;
+    /* top: 20px; */
+    background-color: #4FC3F7;
+    border-radius: 0 0 3px 3px;
+
+}
+.pluse {
+    font-weight: bolder;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    background-color: #29B6F6;
+    border-radius: 40px;
+    top: -24px;
+    left:41%;
+    border: 4px solid white;
+    transform: rotate(45deg);
+    transition: .6s ease-in-out;
+    cursor: pointer;
+}
+.add {
+    /* display: none; */
+    padding: 0px 8px 8px 8px;
+    height: 90px;
+    transition: .6s ease-in-out;
+}
+.add input {
+    margin-top: 40px;
+    border: 1px solid white;
+    width: 70%;
+    padding: 5px 6px;
+    color: #444444;
+}
+.add button {
+    border: none;
+    padding: 6px;
+    background-color: #304FFE;
+    color: white;
+    cursor: pointer;
+}
+
+/* messages */
+.messages {
+    position: absolute;
+    background-color: #64DD17;
+    color: white;
+    border-radius: 1px;
+    height: 28px;
+    width: 90%;
+    left: 11px;
+    top: 40px;
+    display: none;
+    font-size: 15;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+.showMsg {
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    display: inline-block;
+}
+.errMsg {
+    background-color: tomato;
+}
+.hide {
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    display: none;
+}
+
+/* height for add section */
+.addHeight {
+    height: 20px;
+}
+.plusSym {
+    transform: rotate(0deg);
+}
+.some-text {
+    text-align: center;
+    font-size: 11px;
+    margin-top: 8px;
+    opacity: .5;
+}
